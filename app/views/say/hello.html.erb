@@ -1,2 +1,15 @@
 <h1>Say#hello</h1>
 <p>Find me in app/views/say/hello.html.erb</p>
+<p>time from controller: <%= @time %></p>
+<p>
+  Say goodbye!
+  <%=link_to "goodbye", say_goodbye_path%>!
+</p>
+
+<p>
+  <ul>
+      <% for file in @files %>
+      <li>file name is: <%= file %></li>
+      <% end %>
+  </ul>
+</p>
